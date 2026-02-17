@@ -47,7 +47,7 @@ app.innerHTML = `
       <div class="container hero-content">
         <div class="hero-tag">
           <span></span>
-          Paris — Annecy — National
+          Paris — National
         </div>
         <h1 class="hero-title">
           DOMPTER LE VIDE, <br/>
