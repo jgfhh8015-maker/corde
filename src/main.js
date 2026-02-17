@@ -82,7 +82,7 @@ app.innerHTML = `
           </div>
           <div class="vision-image">
             <div style="position: relative; overflow: hidden; border-radius: 2px;">
-              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9rEW9gTvNTVHO8_w4rfnkz1LKPOCG2MIV3fK7Y6ufqotFtzXq8cxafAh8z7EmMmloavdsephYz738_mLvre9d0fWxd4BcajLYwyGV8UR6wVmvRoWiT6TLCDCS92Vh3YG8rV_t-7A3UXFGYJVuth4ivpBDPJJglQDYZyKe0X0wFx7T88G1bWirDQhBnKHtJKcIV2UlCP7RujtdPquojY77ABOTwgYu_H2ZVp6wPDAhOpDptcY8XKhXsTLTRBRTOiV4K7B5QTHoPSw" alt="Détail technique" style="width: 100%; filter: grayscale(1); transition: transform 0.8s ease;">
+              <img src="/riad-b-expert-cordiste-fpv-paris.jpg" alt="Riad B. Cordiste et Pilote Drone" style="width: 100%; filter: grayscale(1); transition: transform 0.8s ease;">
             </div>
           </div>
         </div>
