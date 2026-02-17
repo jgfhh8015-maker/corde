@@ -10,6 +10,7 @@ app.innerHTML = `
       <span class="material-symbols-outlined" style="font-size: 2.5rem;">close</span>
     </button>
     <a href="#vision" class="mobile-link">Approche</a>
+    <a href="/blog/index.html" class="mobile-link">Journal</a>
     <a href="#portfolio" class="mobile-link">Portfolio</a>
     <a href="#videos" class="mobile-link">Vidéos</a>
     <a href="#contact" class="mobile-link">Contact</a>
@@ -26,6 +27,7 @@ app.innerHTML = `
     </a>
     <nav class="nav-links">
       <a href="#vision">Approche</a>
+      <a href="/blog/index.html">Journal</a>
       <a href="#portfolio">Portfolio</a>
       <a href="#videos">Vidéos</a>
       <a href="#contact">Contact</a>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Expertise | ACORDE Paris</title>
+    <meta name="description"
+        content="Articles sur l'expertise verticale, le drone FPV, la photographie en hauteur et la sécurité des travaux sur cordes à Paris.">
+    <link rel="stylesheet" href="../src/style.css">
+    <style>
+        .blog-container {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 12rem 5vw 6rem;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+        }
+
+        .blog-card {
+            background: var(--noir-black);
+            border: 1px solid var(--border-white);
+            transition: var(--transition);
+            border-radius: 2px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+
+        .card-img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+            filter: grayscale(1);
+            transition: var(--transition);
+        }
+
+        .blog-card:hover .card-img {
+            filter: grayscale(0.2);
+        }
+
+        .card-content {
+            padding: 2rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-tag {
+            color: var(--primary);
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.15rem;
+            margin-bottom: 1rem;
+        }
+
+        .card-title {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .card-desc {
+            font-size: 0.95rem;
+            color: var(--text-gray);
+            font-weight: 300;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            flex-grow: 1;
+        }
+
+        .card-link {
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            font-size: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .
+    </style>
+</head>
+
+<body>
+    <div class="grain-overlay"></div>
+
+    <header class="nav">
+        <a href="../index.html" class="brand">
+            <span class="brand-main">ACORDE</span>
+            <span class="brand-sub">PARIS</span>
+        </a>
+        <nav class="nav-links">
+            <a href="../index.html#vision">Approche</a>
+            <a href="../index.html#portfolio">Portfolio</a>
+            <a href="../index.html#videos">Vidéos</a>
+            <a href="../index.html#contact">Contact</a>
+        </nav>
+        <div style="display: flex; gap: 1.5rem; align-items: center;">
+            <a href="../index.html#contact" class="nav-cta">Prendre Contact</a>
+        </div>
+    </header>
+
+    <main class="blog-container">
+        <header style="text-align: center; margin-bottom: 6rem;">
+            <p class="uppercase"
+                style="color: var(--primary); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.3rem; margin-bottom: 2rem;">
+                Journal de Bord</p>
+            <h1 class="hero-title" style="font-size: clamp(3rem, 6vw, 5rem);">Expertise & Perspectives</h1>
+        </header>
+
+        <div class="blog-grid">
+            <!-- Article 1 -->
+            <article class="blog-card">
+                <a href="expertise-verticale/index.html" style="text-decoration: none; color: inherit;">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAww-r6vesOP6b4s-s4S4wRl3O1E4g79uCAx51G8f-Yk1EDXZhvAOX1DP1fw-y7MqSqyK06UucIzzEE8dQ7LtKzYp6-scuOAWD3v6gXyHsYvR6z1ieX4NIqrrYYHBU3UYZ5TaLcnb65G1PsfLEaAVPWcRnmm3vl099wYuUj4y_-v5kBKCoyx5yHCbouX7HLnTbKRkdwKOT-e4Ogs7IcaAyqLoVJIrIXnPTPO84vH_sqVeKowekeeJZRTcH6clUeCxgkwZpfgd0mTho"
+                        alt="Cordiste" class="card-img">
+                    <div class="card-content">
+                        <span class="card-tag">Technique & Esthétique</span>
+                        <h2 class="card-title">Expertise Verticale & Drone FPV : L’Alliance Unique</h2>
+                        <p class="card-desc">Comment la double compétence de cordiste et pilote de drone change la donne
+                            pour vos inspections et productions visuelles.</p>
+                        <span class="card-link">Lire l'article &rarr;</span>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Placeholder Article 2 -->
+            <article class="blog-card" style="opacity: 0.6; pointer-events: none;">
+                <div
+                    style="background-color: #222; height: 250px; display: flex; align-items: center; justify-content: center; color: #555;">
+                    Bientôt disponible</div>
+                <div class="card-content">
+                    <span class="card-tag">Sécurité</span>
+                    <h2 class="card-title">Les Défis de l'Inspection en Hauteur</h2>
+                    <p class="card-desc">Analyse des risques et solutions techniques pour les environnements complexes.
+                    </p>
+                </div>
+            </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 6rem;">
+            <a href="../index.html" class="btn-outline">Retour à l'Accueil</a>
+        </div>
+    </main>
+
+    <footer class="container" style="padding: 4rem 0; border-top: 1px solid var(--border-white); text-align: center;">
+        <p style="color: var(--text-gray); font-size: 0.9rem;">&copy; 2026 ACORDE Paris. Tous droits réservés.</p>
+    </footer>
+</body>
+
+</html>
