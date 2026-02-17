@@ -15,8 +15,9 @@ app.innerHTML = `
     <a href="#videos" class="mobile-link">Vidéos</a>
     <a href="#contact" class="mobile-link">Contact</a>
     <div style="margin-top: 4rem; display: flex; gap: 2rem;">
-       <a href="#" style="font-size: 0.7rem; font-family: var(--font-sans); text-transform: uppercase; letter-spacing: 0.1rem;">Instagram</a>
-       <a href="#" style="font-size: 0.7rem; font-family: var(--font-sans); text-transform: uppercase; letter-spacing: 0.1rem;">TikTok</a>
+       <a href="#" style="font-size: 0.7rem; font-family: var(--font-sans); text-transform: uppercase; letter-spacing: 0.1rem; color: white; text-decoration: none;">Instagram</a>
+       <a href="#" style="font-size: 0.7rem; font-family: var(--font-sans); text-transform: uppercase; letter-spacing: 0.1rem; color: white; text-decoration: none;">TikTok</a>
+       <a href="#" style="font-size: 0.7rem; font-family: var(--font-sans); text-transform: uppercase; letter-spacing: 0.1rem; color: white; text-decoration: none;">YouTube</a>
     </div>
   </div>
 
@@ -70,7 +71,7 @@ app.innerHTML = `
     <!-- Approche -->
     <section id="vision" style="background: var(--background-dark);">
       <div class="container">
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem; align-items: center;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 6rem; align-items: center;">
           <div class="vision-text">
             <p class="uppercase" style="color: var(--primary); font-size: 0.65rem; font-weight: 700; letter-spacing: 0.3rem; margin-bottom: 2.5rem;">L'Art et la Manière</p>
             <h2 style="font-family: var(--font-serif); font-size: clamp(2.5rem, 5vw, 4.5rem); line-height: 1.1; margin-bottom: 3rem; letter-spacing: -0.01em;">L'Équilibre entre <br/><span class="italic" style="color: var(--text-gray); font-weight: 300;">Technique et Image</span></h2>
@@ -90,7 +91,7 @@ app.innerHTML = `
 
     <!-- Services Cards Re-styled -->
     <section id="services" class="container" style="padding-top: 0;">
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; padding: 2rem 0;">
         <div style="padding: 4rem 3rem; background: var(--noir-black); border: 1px solid var(--border-white); border-radius: 2px; transition: var(--transition);">
           <h3 style="font-family: var(--font-cinzel); font-size: 1rem; letter-spacing: 0.2rem; margin-bottom: 2rem; color: var(--primary);">01. IMAGE & CINÉMA</h3>
           <p style="color: var(--text-gray); font-weight: 300; line-height: 1.7;">Production vidéo complète et photographie professionnelle. Publicité, immobilier de prestige et storytelling visuel.</p>
@@ -167,41 +168,44 @@ app.innerHTML = `
       </div>
     </section>
 
-    <!-- Footer Premium -->
-    <footer id="contact" class="container" style="padding: 10rem 0 5rem; border-top: 1px solid var(--border-white);">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="#" class="brand" style="margin-bottom: 2.5rem;">
-             <span class="brand-main">ACORDE</span>
-             <span class="brand-sub">PARIS</span>
-          </a>
-          <p style="color: var(--text-gray); font-size: 0.9rem; max-width: 320px; line-height: 1.8; font-weight: 300;">
-            Une filiale de STUDIORIAD. Expertise, art et précision à chaque altitude. L'excellence au bout de la corde.
-          </p>
+    <!-- Footer Updated Artistic (Separated from Container) -->
+    <footer id="contact" class="footer-artistic">
+      <div class="footer-top">
+        <div class="footer-col-brand">
+          <h2 class="footer-title-large">Définir de<br>Nouveaux Sommets</h2>
+          <a href="mailto:contact@studioriad.com" style="display: inline-block; margin-top: 2rem; border-bottom: 2px solid var(--primary); padding-bottom: 5px; color: var(--text-white); text-decoration: none; font-size: 1.2rem; font-family: var(--font-serif); transition: color 0.3s ease;">Discuter d'un projet &rarr;</a>
         </div>
-        <div class="footer-group">
-           <p class="uppercase" style="font-size: 0.6rem; color: var(--primary); font-weight: 700; letter-spacing: 0.3rem; margin-bottom: 2rem;">Contact</p>
-           <a href="mailto:contact@studioriad.com" class="footer-link-big">contact@studioriad.com</a>
-           <p style="font-size: 1.1rem; font-weight: 300;">06 15 69 28 39</p>
-        </div>
-        <div class="footer-group">
-           <p class="uppercase" style="font-size: 0.6rem; color: var(--primary); font-weight: 700; letter-spacing: 0.3rem; margin-bottom: 2rem;">Studio</p>
-           <p style="font-size: 1.1rem; font-weight: 300; line-height: 1.6;">23 Avenue Gambetta<br>94400 Vitry-Sur-Seine</p>
-           <p style="font-size: 0.7rem; color: var(--text-gray); margin-top: 1.5rem; font-style: italic;">(Visite sur rendez-vous)</p>
-        </div>
-        <div class="footer-group">
-           <p class="uppercase" style="font-size: 0.6rem; color: var(--primary); font-weight: 700; letter-spacing: 0.3rem; margin-bottom: 2rem;">Légal</p>
-           <p style="font-size: 0.9rem; margin-bottom: 1.2rem; font-weight: 300;">SIREN : 512 947 102</p>
-           <a href="#" style="color: white; text-decoration: none; font-size: 0.8rem; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 2px;">CGV / Mentions Légales</a>
+        <div class="footer-col-nav">
+           <div class="footer-group-art">
+              <p class="fg-title">Explorer</p>
+              <a href="#vision" class="fg-item">Approche</a>
+              <a href="#portfolio" class="fg-item">Portfolio</a>
+              <a href="/blog/index.html" class="fg-item">Journal</a>
+           </div>
+           <div class="footer-group-art">
+              <p class="fg-title">Contact</p>
+              <a href="mailto:contact@studioriad.com" class="fg-item">contact@studioriad.com</a>
+              <span class="fg-item">06 15 69 28 39</span>
+           </div>
+           <div class="footer-group-art">
+              <p class="fg-title">Légal</p>
+              <span class="fg-item" style="font-size: 0.8rem;">SIREN : 512 947 102</span>
+              <a href="#" class="fg-item" style="font-size: 0.8rem;">Mentions Légales</a>
+           </div>
         </div>
       </div>
-      <div style="margin-top: 8rem; padding-top: 3rem; border-top: 1px solid var(--border-white); display: flex; justify-content: space-between; align-items: center; font-size: 0.75rem; color: var(--text-gray); flex-wrap: wrap; gap: 3rem;">
-        <p>&copy; 2026 Studioriad.com Tous droits réservés.</p>
-        <div style="display: flex; gap: 3rem;">
-          <a href="#" style="color: inherit; text-decoration: none; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1rem;">Instagram</a>
-          <a href="#" style="color: inherit; text-decoration: none; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1rem;">TikTok</a>
-          <a href="#" style="color: inherit; text-decoration: none; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1rem;">YouTube</a>
+      
+      <div class="footer-bottom">
+        <div class="brand">
+          <span class="brand-main">ACORDE</span>
+          <span class="brand-sub">PARIS</span>
         </div>
+        <div class="footer-socials">
+          <a href="#" class="social-link">Instagram</a>
+          <a href="#" class="social-link">TikTok</a>
+          <a href="#" class="social-link">YouTube</a>
+        </div>
+        <p>&copy; 2026 Studioriad. All rights reserved.</p>
       </div>
     </footer>
   </main>
