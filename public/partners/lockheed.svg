@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100">
+  <path d="M20,50 L40,30 L60,50 L40,70 Z" fill="#fff" />
+  <circle cx="40" cy="50" r="5" fill="#003569"/>
+  <text x="75" y="65" font-family="Arial, sans-serif" font-weight="900" font-size="34" letter-spacing="2" fill="#fff">LOCKHEED MARTIN</text>
+</svg>

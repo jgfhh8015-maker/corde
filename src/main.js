@@ -78,11 +78,11 @@ app.innerHTML = `
               <p class="trust-text">5/5 avis Google <br><span>Moyenne basée sur la confiance</span></p>
            </div>
            <div class="partners-grid">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Total_energies_logo.svg/2560px-Total_energies_logo.svg.png" alt="TotalEnergies" class="partner-logo">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Lockheed_Martin_logo.svg/1200px-Lockheed_Martin_logo.svg.png" alt="Lockheed Martin" class="partner-logo">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Bouygues_logo.svg/1024px-Bouygues_logo.svg.png" alt="Bouygues" class="partner-logo" style="height: 24px;">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Vinci_Logo.svg/2560px-Vinci_Logo.svg.png" alt="Vinci" class="partner-logo" style="height: 38px;">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Eiffage_2024_logo.svg/2560px-Eiffage_2024_logo.svg.png" alt="Eiffage" class="partner-logo" style="height: 22px;">
+              <img src="/partners/total.svg" alt="TotalEnergies" class="partner-logo">
+              <img src="/partners/lockheed.svg" alt="Lockheed Martin" class="partner-logo">
+              <img src="/partners/bouygues.svg" alt="Bouygues" class="partner-logo" style="height: 28px;">
+              <img src="/partners/vinci.svg" alt="Vinci" class="partner-logo" style="height: 28px;">
+              <img src="/partners/eiffage.svg" alt="Eiffage" class="partner-logo" style="height: 26px;">
            </div>
         </div>
       </div>

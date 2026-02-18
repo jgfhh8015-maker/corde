@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100">
+  <path d="M20,20 L60,20 L60,80 L20,80 Z" stroke="#FF6600" stroke-width="8" fill="none" rx="10"/>
+  <text x="80" y="70" font-family="Arial, sans-serif" font-weight="bold" font-size="50" fill="#fff" letter-spacing="-2">BOUYGUES</text>
+  <text x="80" y="85" font-family="Arial, sans-serif" font-weight="bold" font-size="12" fill="#fff">CONSTRUCTION</text>
+</svg>
