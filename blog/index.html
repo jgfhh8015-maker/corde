@@ -7,7 +7,9 @@
     <title>Blog Expertise | ACORDE Paris</title>
     <meta name="description"
         content="Articles sur l'expertise verticale, le drone FPV, la photographie en hauteur et la sécurité des travaux sur cordes à Paris.">
-    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <style>
         .blog-container {
             max-width: 1440px;
@@ -91,29 +93,61 @@
             align-items: center;
             gap: 0.5rem;
         }
-
-        .
     </style>
 </head>
 
 <body>
     <div class="grain-overlay"></div>
 
+    <div class="mobile-menu" id="mobileMenu">
+        <button id="closeMenu" class="close-menu">
+            <span class="material-symbols-outlined" style="font-size: 2.5rem;">close</span>
+        </button>
+        <a href="/#vision" class="mobile-link">Approche</a>
+        <a href="/blog/index.html" class="mobile-link">Journal</a>
+        <a href="/#portfolio" class="mobile-link">Portfolio</a>
+        <a href="/#videos" class="mobile-link">Vidéos</a>
+        <a href="/#contact" class="mobile-link">Contact</a>
+        <div style="margin-top: 4rem; display: flex; gap: 2rem;">
+            <a href="#"
+                style="font-size: 0.7rem; font-family: var(--font-sans); text-transform: uppercase; letter-spacing: 0.1rem; color: white; text-decoration: none;">Instagram</a>
+            <a href="#"
+                style="font-size: 0.7rem; font-family: var(--font-sans); text-transform: uppercase; letter-spacing: 0.1rem; color: white; text-decoration: none;">TikTok</a>
+            <a href="#"
+                style="font-size: 0.7rem; font-family: var(--font-sans); text-transform: uppercase; letter-spacing: 0.1rem; color: white; text-decoration: none;">YouTube</a>
+        </div>
+    </div>
+
     <header class="nav">
-        <a href="../index.html" class="brand">
+        <a href="/index.html" class="brand">
             <span class="brand-main">ACORDE</span>
             <span class="brand-sub">PARIS</span>
         </a>
         <nav class="nav-links">
-            <a href="../index.html#vision">Approche</a>
-            <a href="../index.html#portfolio">Portfolio</a>
-            <a href="../index.html#videos">Vidéos</a>
-            <a href="../index.html#contact">Contact</a>
+            <a href="/#vision">Approche</a>
+            <a href="/blog/index.html">Journal</a>
+            <a href="/#portfolio">Portfolio</a>
+            <a href="/#videos">Vidéos</a>
+            <a href="/#contact">Contact</a>
         </nav>
         <div style="display: flex; gap: 1.5rem; align-items: center;">
-            <a href="../index.html#contact" class="nav-cta">Prendre Contact</a>
+            <a href="/#contact" class="nav-cta">Prendre Contact</a>
+            <button id="openMenu" class="menu-toggle">
+                <span class="material-symbols-outlined" style="font-size: 1.8rem;">menu</span>
+            </button>
         </div>
     </header>
+
+    <script>
+        const mobileMenu = document.getElementById('mobileMenu')
+        const openMenu = document.getElementById('openMenu')
+        const closeMenu = document.getElementById('closeMenu')
+        const mobileLinks = document.querySelectorAll('.mobile-link')
+
+        openMenu.onclick = () => mobileMenu.classList.add('active')
+        closeMenu.onclick = () => mobileMenu.classList.remove('active')
+        mobileLinks.forEach(link => link.onclick = () => mobileMenu.classList.remove('active'))
+    </script>
 
     <main class="blog-container">
         <header style="text-align: center; margin-bottom: 6rem;">
@@ -158,8 +192,46 @@
         </div>
     </main>
 
-    <footer class="container" style="padding: 4rem 0; border-top: 1px solid var(--border-white); text-align: center;">
-        <p style="color: var(--text-gray); font-size: 0.9rem;">&copy; 2026 ACORDE Paris. Tous droits réservés.</p>
+    <footer id="contact" class="footer-artistic">
+        <div class="footer-top">
+            <div class="footer-col-brand">
+                <h2 class="footer-title-large">Définir de<br>Nouveaux Sommets</h2>
+                <a href="mailto:contact@studioriad.com"
+                    style="display: inline-block; margin-top: 2rem; border-bottom: 2px solid var(--primary); padding-bottom: 5px; color: var(--text-white); text-decoration: none; font-size: 1.2rem; font-family: var(--font-serif); transition: color 0.3s ease;">Discuter
+                    d'un projet &rarr;</a>
+            </div>
+            <div class="footer-col-nav">
+                <div class="footer-group-art">
+                    <p class="fg-title">Explorer</p>
+                    <a href="/index.html#vision" class="fg-item">Approche</a>
+                    <a href="/index.html#portfolio" class="fg-item">Portfolio</a>
+                    <a href="/blog/index.html" class="fg-item">Journal</a>
+                </div>
+                <div class="footer-group-art">
+                    <p class="fg-title">Contact</p>
+                    <a href="mailto:contact@studioriad.com" class="fg-item">contact@studioriad.com</a>
+                    <span class="fg-item">06 15 69 28 39</span>
+                </div>
+                <div class="footer-group-art">
+                    <p class="fg-title">Légal</p>
+                    <span class="fg-item" style="font-size: 0.8rem;">SIREN : 512 947 102</span>
+                    <a href="#" class="fg-item" style="font-size: 0.8rem;">Mentions Légales</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="brand">
+                <span class="brand-main">ACORDE</span>
+                <span class="brand-sub">PARIS</span>
+            </div>
+            <div class="footer-socials">
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">TikTok</a>
+                <a href="#" class="social-link">YouTube</a>
+            </div>
+            <p>&copy; 2026 ACORDE Paris. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 

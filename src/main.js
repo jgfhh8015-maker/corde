@@ -23,7 +23,7 @@ app.innerHTML = `
   </div>
 
   <header class="nav">
-    <a href="#" class="brand">
+    <a href="/index.html" class="brand">
       <span class="brand-main">ACORDE</span>
       <span class="brand-sub">PARIS</span>
     </a>
@@ -198,8 +198,8 @@ app.innerHTML = `
         <div class="footer-col-nav">
            <div class="footer-group-art">
               <p class="fg-title">Explorer</p>
-              <a href="#vision" class="fg-item">Approche</a>
-              <a href="#portfolio" class="fg-item">Portfolio</a>
+              <a href="/index.html#vision" class="fg-item">Approche</a>
+              <a href="/index.html#portfolio" class="fg-item">Portfolio</a>
               <a href="/blog/index.html" class="fg-item">Journal</a>
            </div>
            <div class="footer-group-art">
@@ -225,7 +225,7 @@ app.innerHTML = `
           <a href="#" class="social-link">TikTok</a>
           <a href="#" class="social-link">YouTube</a>
         </div>
-        <p>&copy; 2026 Studioriad. All rights reserved.</p>
+        <p>&copy; 2026 ACORDE Paris. All rights reserved.</p>
       </div>
     </footer>
   </main>
